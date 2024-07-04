@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="title" class="text-center">Dragon Ball Fan Survey</h1>
+      <p id="description" class="description text-center">Thank you for being a Dragon Ball fan!!</p>
+      <form id="survey-form" method=>
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input id="name" name="name" type="text" class="form-control" required placeholder="What do we call you?"/>
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input id="email" name="email" type="email" class="form-control" required placeholder="What is your email?" />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number">Age (optional)</label>
+          <input id="number" name="age" type="number" class="form-control" min="18" max="100" placeholder="How old are you?">
+        </div>
+        <div class="form-group">
+          <label for="dropdown">Which is your favorite Dragon Ball anime?</label>
+          <select id="dropdown" for="dropdown" class="form-control">
+            <option value="">(Select one)</option>
+            <option value="1">Dragon Ball</option>
+            <option value="2">Dragon Ball Z</option>
+            <option value="3">Dragon Ball GT</option>
+            <option value="4">Dragon Ball Super</option>
+            <option value="5">Other</option>
+            </select>
+        </div>
+        <div class="form-group">
+          <p>Would you recommend Dragon Ball to a friend?</p>
+          <label>
+            <input type="radio" name="user-recommend" value="definitely" class="input-radio" checked>
+            Definitely
+          </label>
+          <label>
+          <input type="radio" name="user-recommend" value="maybe" class="input-radio">
+          Maybe
+          </label>
+          <label>
+          <input type="radio" name="user-recommend" value="not-sure" class="input-radio">
+          Not Sure (Why is this even an option?)
+          </label>
+        </div>
+        <div class="form-group">
+          <p>Which is your favorite saga?
+            <span class="clue">(Check all that apply)</span>
+          </p>
+          <label>
+            <input type="checkbox" name="prefer" value="front-end-projects" class="input-checkbox">
+            Goku's Boyhood
+          </label>
+          <label>
+            <input type="checkbox" name="prefer" value="back-end-projects" class="input-checkbox">
+            Red Ribbon Army
+          </label>
+          <label>
+            <input type="checkbox" name="prefer" value="data-visualization" class="input-checkbox">
+            Demon King Piccolo
+          </label>
+          <label>
+            <input type="checkbox" name="prefer" value="challenges" class="input-checkbox">
+            Saiyans
+          </label>
+          <label>
+            <input type="checkbox" name="prefer" value="open-source-community" class="input-checkbox">
+            Namek and Frieza
+          </label>
+          <label>
+            <input type="checkbox" name="prefer" value="gitter-help-rooms" class="input-checkbox">
+            Androids and the Cell Games
+          </label>
+          <label>
+            <input type="checkbox" name="prefer" value="videos" class="input-checkbox">
+            Majin Buu
+          </label>
+          <label>
+            <input type="checkbox" name="prefer" value="city-meetups" class="input-checkbox">
+            God of the Universe
+          </label>
+          <label>
+            <input type="checkbox" name="prefer" value="wiki" class="input-checkbox">
+            Zeno
+          </label>
+          <label>
+            <input type="checkbox" name="prefer" value="forum" class="input-checkbox">
+            Universe 7
+          </label>
+          <label>
+            <input type="checkbox" name="prefer" value="additional-courses" class="input-checkbox">
+            Other
+          </label>
+        </div>
+        <div class="form-group">
+          <p>How did you get introduced to Dragon Ball?</p>
+          <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+        </div>
+        <div class="form-group">
+          <button id="submit" class="submit-button" type="submit">
+            Submit
+            </button>
+        </div>
+      </div>
+    </body>
